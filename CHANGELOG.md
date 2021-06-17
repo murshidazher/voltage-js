@@ -1,3 +1,20 @@
+# v1.0.4 (Thu Jun 17 2021)
+
+#### ⚠️ Pushed to `main`
+
+- :gear: config: remove pulish config ([@murshidazher](https://github.com/murshidazher))
+- :wrench: chore: update workflow ([@murshidazher](https://github.com/murshidazher))
+- :sparkles: feat: add ghpage workflow ([@murshidazher](https://github.com/murshidazher))
+- :books: docs: update README ([@murshidazher](https://github.com/murshidazher))
+- :sparkles: feat: remove html example ([@murshidazher](https://github.com/murshidazher))
+- :books: docs: update badges ([@murshidazher](https://github.com/murshidazher))
+
+#### Authors: 1
+
+- Murshid Azher ([@murshidazher](https://github.com/murshidazher))
+
+---
+
 # v1.0.3 (Thu Jun 17 2021)
 
 #### ⚠️ Pushed to `main`
