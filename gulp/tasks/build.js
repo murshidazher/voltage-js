@@ -4,26 +4,28 @@ var gulp = require('gulp'),
   rev = require('gulp-rev'),
   cssnano = require('gulp-cssnano'),
   uglify = require('gulp-uglify'),
+  concat = require('gulp-concat'),
+  babel = require('gulp-babel'),
   browserSync = require('browser-sync').create(),
-  scripts = require('./scripts').scripts,
-  styles = require('./styles').styles;
+  sourcemaps = require('gulp-sourcemaps'),
+  scripts = require('./scripts').default,
+  styles = require('./styles').default,
+  rename = require('gulp-rename');
 
-function previewDist(done) {
+function previewDist() {
   browserSync.init({
     notify: false,
     server: {
       baseDir: "example"
     }
   });
-  done();
 }
 
-function browserSyncReload(done) {
+function browserSyncReload() {
   browserSync.reload();
-  done();
 }
 
-function deleteDistFolder() {
+function deleteFolders() {
   return del(['./example', './dist']);
 }
 
@@ -44,8 +46,32 @@ function exportExampleFiles() {
     .pipe(gulp.dest('./example'));
 }
 
-function exportDistFiles() {
-  return gulp.src('./src/index.html')
+// export voltage.js and voltage.min.js
+function distScript(cb) {
+  gulp.src('./src/temp/scripts/voltage.min.js')
+    .pipe(gulp.dest('dist/js/'))
+    .on('error', function (errorInfo) {
+      console.log(errorInfo.toString());
+      this.emit('end'); // gracefully saying that the task has come to an end.
+    });
+
+  cb();
+}
+
+// export unminified script
+function js(cb) {
+    gulp.src("./src/assets/scripts/*js")
+        .pipe(babel({
+            presets: ['@babel/preset-env']
+        }))
+        .pipe(concat("voltage.js"))
+        .pipe(gulp.dest("dist/js/"));
+    cb();
+}
+
+// export voltage.css and voltage.min.css
+function distStyles(cb) {
+  gulp.src('./src/temp/styles/voltage.css')
     .pipe(usemin({
       css: [function () {
         return rev()
@@ -53,19 +79,32 @@ function exportDistFiles() {
         return cssnano()
       }]
     }))
-    .pipe(gulp.dest('./dist'));
+    .pipe(rename('./voltage.min.css'))
+    .pipe(sourcemaps.init())
+    .pipe(sourcemaps.write('maps/'))
+    .pipe(gulp.dest('dist/css/'));
+
+  cb();
 }
 
-const deleteFolders = gulp.parallel(exportDistFiles, exportExampleFiles);
-const useminTask = gulp.series(styles, scripts, deleteFolders);
-const startUsemin = gulp.series(useminTask);
-const build = gulp.parallel(deleteFolders, startUsemin);
+function distStylesMaps(cb) {
+  gulp.src('./src/temp/styles/voltage.css')
+    .pipe(sourcemaps.init())
+    .pipe(sourcemaps.write('maps/'))
+    .pipe(gulp.dest('dist/css/'));
 
+  cb();
+}
+
+function cleanUp() {
+  return del(['./src/temp']);
+}
+
+const exportExamples = gulp.parallel(exportExampleFiles);
+const exportDist = gulp.parallel(distScript, js, distStyles, distStylesMaps);
+const exportTemp = gulp.parallel(styles, scripts);
+const startBuild = gulp.series(exportTemp, exportExamples, exportDist, cleanUp);
+const build = gulp.series(deleteFolders, startBuild);
 
 // export tasks
-exports.deleteDistFolder = deleteDistFolder;
-exports.exportExampleFiles = exportExampleFiles;
-exports.startUsemin = startUsemin;
-exports.usemin = useminTask;
-exports.build = build;
 exports.default = build;

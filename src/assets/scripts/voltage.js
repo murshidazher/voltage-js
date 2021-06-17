@@ -1,5 +1,4 @@
 window.addEventListener('load', function () {
-
     function updateOnlineStatus() {
         clearNotifiers();
         var condition = navigator.onLine ? "online" : "offline";

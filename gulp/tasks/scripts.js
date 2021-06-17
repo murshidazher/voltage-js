@@ -1,9 +1,9 @@
 var gulp = require('gulp'),
   webpack = require('webpack'),
-  modernizr = require('./modernizr').modernizr;
+  modernizr = require('./modernizr').default;
 
 //callback is used so that gulp knows when the task successfully competed
-function task(callback) {
+function compileScript(callback) {
   webpack(require('../../webpack.config.js'), function (err, stats) {
 
     if (err)
@@ -14,8 +14,7 @@ function task(callback) {
   }); // require the config file webpack.config.js
 }
 
-const scripts = gulp.series(modernizr, task)
+const scripts = gulp.series(modernizr, compileScript)
 
 // export tasks
-exports.scripts = scripts;
 exports.default = scripts;

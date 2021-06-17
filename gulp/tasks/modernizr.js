@@ -14,5 +14,4 @@ function modernizr() {
 }
 
 // export tasks
-exports.modernizr = modernizr;
 exports.default = modernizr;

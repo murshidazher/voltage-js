@@ -47,6 +47,12 @@ Here's a brief intro about what a developer must do in order to start developing
 </html>
 ```
 
+## Development
+
+```shell
+$ npm i -g gulp
+```
+
 ## Contributors
 
 [![contributors](https://contrib.rocks/image?repo=murshidazher/voltage.js)](https://github.com/murshidazher/voltage.js/graphs/contributors)

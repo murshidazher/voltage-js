@@ -1,11 +1,11 @@
 var gulp = require('gulp'), // imports gulp file
   watch = require('gulp-watch'), // imports gulp-watch package
   browserSync = require('browser-sync').create(),
-  scripts = require('./scripts').scripts,
-  styles = require('./styles').styles;
+  scripts = require('./scripts').default,
+  styles = require('./styles').default;
 
 
-function watchFiles() {
+function inspectFileChanges() {
   browserSync.init({
       notify: false,
       server: {
@@ -13,39 +13,27 @@ function watchFiles() {
       }
   });
 
-  // we need to pass two arguments in watch function
-  // watch(path_of_the_file_to_watch, what function to do when a change is detected)
-  watch('./src/index.html', function() {
-    browserSync.reload();
-  });
+  gulp.watch('./src/index.html', browserSync.reload());
 
-	watch('./src/assets/styles/**/*.css', function() {
-    gulp.series(cssInject); // start a task
-  });
+	gulp.watch('./src/assets/styles/**/*.css', cssInject); // start a task
 
-  watch('./src/assets/scripts/**/*.js', function() {
-    gulp.series(scriptsRefresh);
-  });
+  gulp.watch('./src/assets/scripts/**/*.js', scriptsRefresh);
 }
 
 function css() {
   return gulp.src('./src/temp/styles/voltage.css')
     .pipe(browserSync.stream());
-    //stream() method will pipe whatever the content that was piped into
-    // available on the browser.
 }
 
-function browserSyncReload(done) {
+function browserSyncReload(cb) {
   browserSync.reload();
-  done();
+  cb();
 }
 
-const scriptsRefresh = gulp.parallel(scripts, browserSyncReload)
-const cssInject = gulp.series(styles, css)
+const scriptsRefresh = gulp.series(scripts, browserSyncReload);
+const cssInject = gulp.series(styles, css);
+const initialFileRefresh = gulp.parallel(scriptsRefresh, styles);
+const startWatch = gulp.series(initialFileRefresh, inspectFileChanges)
 
 // export tasks
-exports.watchFiles = watchFiles;
-exports.css = css;
-exports.scriptsRefresh = scriptsRefresh;
-exports.cssInject = cssInject;
-exports.default = watchFiles;
+exports.default = startWatch;
