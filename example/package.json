@@ -13,6 +13,7 @@
     "voltage.js": "1.0.6",
     "web-vitals": "^1.0.1"
   },
+  "homepage": "https://murshidazher.github.io/voltage.js/",
   "scripts": {
     "start": "react-scripts start",
     "build": "CI=false react-scripts build",

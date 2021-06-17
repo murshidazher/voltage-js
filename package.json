@@ -19,7 +19,7 @@
     "internet",
     "web status"
   ],
-  "homepage": "https://murshidazher.github.io/voltagejs/",
+  "homepage": "https://murshidazher.github.io/voltage.js/",
   "scripts": {
     "start": "webpack --config webpack.config.js",
     "dev": "gulp watch",
