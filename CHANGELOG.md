@@ -1,3 +1,16 @@
+# v1.0.5 (Thu Jun 17 2021)
+
+#### ⚠️ Pushed to `main`
+
+- :sparkles: feat: update dependencies ([@murshidazher](https://github.com/murshidazher))
+- :sparkles: feat: remove babel-loader ([@murshidazher](https://github.com/murshidazher))
+
+#### Authors: 1
+
+- Murshid Azher ([@murshidazher](https://github.com/murshidazher))
+
+---
+
 # v1.0.4 (Thu Jun 17 2021)
 
 #### ⚠️ Pushed to `main`
