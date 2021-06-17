@@ -1,0 +1,20 @@
+.notifier {
+  padding: 20px;
+  font-family: 'Big Caslon', 'Book Antiqua', 'Palatino Linotype', Georgia, serif;
+  box-sizing: border-box;
+  font-size: 18px;
+  color: #fff;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+}
+
+.online {
+  background-color: rgb(60, 184, 173);
+}
+
+.offline {
+  background-color: #eb1621;
+}
