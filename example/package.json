@@ -15,7 +15,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "jest --ci --coverage --passWithNoTests && codecov",
+    "test": "jest --ci --coverage --passWithNoTests",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
