@@ -10,7 +10,7 @@
 
 ## Table of Contents
 
-- [voltage.js [![npm](https://img.shields.io/npm/v/voltage.svg?label=&color=0080FF)](https://github.com/murshidazher/voltage/releases/latest)](#voltagejs-)
+- [voltage.js](#voltagejs-)
   - [Table of Contents](#table-of-contents)
   - [Installing / Getting started](#installing--getting-started)
   - [Usage](#usage)

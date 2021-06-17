@@ -1,7 +1,10 @@
 {
   "name": "voltage.js",
   "version": "1.0.1",
-  "main": "dist",
+  "main": "dist/js/voltage.js",
+  "files": [
+    "dist"
+  ],
   "author": "murshidazher <hello@murshidazer.com>",
   "license": "MIT",
   "repository": {
