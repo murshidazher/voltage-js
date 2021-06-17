@@ -1,3 +1,15 @@
+# v1.0.3 (Thu Jun 17 2021)
+
+#### ⚠️ Pushed to `main`
+
+- :sparkles: feat: reduce the package size ([@murshidazher](https://github.com/murshidazher))
+
+#### Authors: 1
+
+- Murshid Azher ([@murshidazher](https://github.com/murshidazher))
+
+---
+
 # v1.0.2 (Thu Jun 17 2021)
 
 #### ⚠️ Pushed to `main`
