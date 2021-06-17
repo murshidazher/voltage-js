@@ -35,4 +35,3 @@ jobs:
         run: |
           yarn install --frozen-lockfile
           yarn release
-          yarn publish
