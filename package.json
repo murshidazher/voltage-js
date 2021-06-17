@@ -1,6 +1,6 @@
 {
   "name": "voltage.js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "dist/js/voltage.js",
   "files": [
     "dist"
