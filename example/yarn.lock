@@ -10922,10 +10922,10 @@ vm-browserify@^1.0.1:
   resolved "https://registry.npmjs.org/vm-browserify/-/vm-browserify-1.1.2.tgz"
   integrity sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ==
 
-voltage.js@1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/voltage.js/-/voltage.js-1.0.6.tgz#89ae17b62e041a0d1890c7c427884d76a1511af3"
-  integrity sha512-x2hXgllqG9Ew0g0680PHv9w2tZAbNBZTBOIHBZSbi30r4R7uKNmDBk6gT0gDTUVzPDhBNhBmP3jxXX6bvUyBAA==
+voltage.js@1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/voltage.js/-/voltage.js-1.0.8.tgz#193d17b71e78a0b03969b4eb6bffbf09af2d50d0"
+  integrity sha512-m2VT/mK2aRKz3wgUz9aicmv/eWdI7iwgVK6i9SjIPfF2lS3vD173PfiLODX/urmNy03rodfPCg5FZ4IhuBgjTw==
 
 w3c-hr-time@^1.0.2:
   version "1.0.2"
