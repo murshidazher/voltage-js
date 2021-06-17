@@ -36,7 +36,6 @@
     "@babel/preset-env": "^7.14.5",
     "auto": "~10.4.2",
     "autoprefixer": "^8.2.0",
-    "babel-loader": "^8.2.2",
     "browser-sync": "^2.23.6",
     "codecov": "~3.8.1",
     "commitizen": "~2.9.3",
