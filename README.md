@@ -28,7 +28,10 @@ $ npm install voltage.js
 
 Here's a brief intro about what a developer must do in order to start developing the project further:
 
-- Add `voltage.css` and `voltage.js` to your html page and then it works.
+### Manually
+
+- Download the latest distribution from [github release](https://github.com/murshidazher/voltage.js/releases/latest).
+- Add `voltage.min.css` and `voltage.min.js` to your html page.
 
 ```html
 <!DOCTYPE html>
@@ -36,14 +39,25 @@ Here's a brief intro about what a developer must do in order to start developing
   <head>
     <meta charset="UTF-8" />
     <title>Voltage.JS Example</title>
-    <link rel="stylesheet" href="voltage.css" />
+    <link rel="stylesheet" href="voltage.min.css" />
   </head>
   <body>
     <div>Example Page</div>
 
-    <script src="voltage.js"></script>
+    <script src="voltage.min.js"></script>
   </body>
 </html>
+```
+
+### Using `npm`
+
+> An example implementation using react could be found [here](./example).
+
+- Add the latest npm package to out project.
+- Import `voltage.css` and `voltage.js` to your frontend.
+
+```shell
+$ npm i voltage.js
 ```
 
 ## Contributors
