@@ -12,8 +12,6 @@ ReactDOM.render(
     <Router basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route exact path="/">
-          {console.log('process.env.PUBLIC_URL')}
-          {console.log(process.env.PUBLIC_URL)}
           <App />
         </Route>
       </Switch>
