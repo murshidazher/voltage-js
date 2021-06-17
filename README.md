@@ -42,7 +42,7 @@ Here's a brief intro about what a developer must do in order to start developing
     <link rel="stylesheet" href="voltage.min.css" />
   </head>
   <body>
-    <div>Example Page</div>
+    <div>Turn off your network to experience voltage.</div>
 
     <script src="voltage.min.js"></script>
   </body>
@@ -56,8 +56,9 @@ Here's a brief intro about what a developer must do in order to start developing
 - Add the latest npm package to the project.
 - Import `voltage.css` and `voltage.js` to your frontend.
 
-```shell
-$ npm i voltage.js
+```js
+import 'voltage.js/dist/css/voltage.css';
+import 'voltage.js/dist/js/voltage.js';
 ```
 
 ## Contributors
