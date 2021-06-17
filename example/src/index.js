@@ -5,10 +5,17 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'voltage.js/dist/css/voltage.css';
 import 'voltage.js/dist/js/voltage.js';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router basename={process.env.PUBLIC_URL}>
+      <Switch>
+        <Route exact path="/">
+          <App />
+        </Route>
+      </Switch>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root'),
 );
