@@ -1,7 +1,7 @@
-# [voltage.js](https://github.com/murshidazher/voltage.js) [![npm](https://img.shields.io/npm/v/voltage.svg?label=&color=0080FF)](https://github.com/murshidazher/voltage.js/releases/latest)
+# [voltage.js](https://github.com/murshidazher/voltage.js) [![npm](https://img.shields.io/npm/v/voltage.js.svg?label=&color=0080FF)](https://github.com/murshidazher/voltage.js/releases/latest)
 
-[![travisci](https://img.shields.io/travis/com/murshidazher/voltage.js/master?style=flat-square)](https://travis-ci.com/)
-[![codecov](https://img.shields.io/codecov/c/gh/murshidazher/voltage.js/master?logo=codecov&style=flat-square&token=L8FWILY45J)](https://codecov.io/gh/murshidazher/voltage.js)
+[![travisci](https://img.shields.io/travis/com/murshidazher/voltage.js.svg?branch=main&style=flat-square)](https://travis-ci.com/)
+[![codecov](https://img.shields.io/codecov/c/gh/murshidazher/voltage.js/main?logo=codecov&style=flat-square&token=L8FWILY45J)](https://codecov.io/gh/murshidazher/voltage.js)
 ![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)
 
 > A library for websites to detect user's connection status. Certified Lit 🔥🔥 **Accepting PRs**
@@ -10,8 +10,7 @@
 
 ## Table of Contents
 
-- [voltage.js](#voltagejs-)
-  - [Table of Contents](#table-of-contents)
+- [Table of Contents](#table-of-contents)
   - [Installing / Getting started](#installing--getting-started)
   - [Usage](#usage)
   - [Contributors](#contributors)
@@ -45,12 +44,6 @@ Here's a brief intro about what a developer must do in order to start developing
     <script src="voltage.js"></script>
   </body>
 </html>
-```
-
-## Development
-
-```shell
-$ npm i -g gulp
 ```
 
 ## Contributors
