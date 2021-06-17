@@ -26,7 +26,7 @@
     "build": "gulp build",
     "tasks": "gulp --tasks",
     "precommit": "lint-staged",
-    "test": "jest --ci --coverage && codecov",
+    "test": "jest --ci --coverage --passWithNoTests && codecov",
     "release": "auto shipit --base-branch=main",
     "example:start": "cd example && yarn run start",
     "example:build": "cd example && yarn run build"
