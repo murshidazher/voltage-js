@@ -1,3 +1,15 @@
+# v1.0.2 (Thu Jun 17 2021)
+
+#### ⚠️ Pushed to `main`
+
+- :wrench: chore: add dist folder ([@murshidazher](https://github.com/murshidazher))
+
+#### Authors: 1
+
+- Murshid Azher ([@murshidazher](https://github.com/murshidazher))
+
+---
+
 # v1.0.1 (Thu Jun 17 2021)
 
 #### ⚠️ Pushed to `main`
