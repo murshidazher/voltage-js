@@ -11,6 +11,15 @@
     "type": "git",
     "url": "https://github.com/murshidazher/voltage.js.git"
   },
+  "keywords": [
+    "voltage",
+    "online",
+    "offline",
+    "status",
+    "internet",
+    "web status"
+  ],
+  "homepage": "https://murshidazher.github.io/voltage.js/",
   "scripts": {
     "start": "webpack --config webpack.config.js",
     "dev": "gulp watch",
@@ -18,18 +27,20 @@
     "tasks": "gulp --tasks",
     "precommit": "lint-staged",
     "test": "jest --ci --coverage && codecov",
-    "release": "auto shipit --base-branch=main"
+    "release": "auto shipit --base-branch=main",
+    "example:start": "cd example && yarn run start",
+    "example:build": "cd example && yarn run build"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
     "@babel/preset-env": "^7.14.5",
-    "auto": "10.4.2",
+    "auto": "~10.4.2",
     "autoprefixer": "^8.2.0",
     "babel-loader": "^8.2.2",
     "browser-sync": "^2.23.6",
-    "codecov": "3.8.1",
-    "commitizen": "2.9.3",
-    "cz-conventional-changelog": "1.2.0",
+    "codecov": "~3.8.1",
+    "commitizen": "~2.9.3",
+    "cz-conventional-changelog": "~1.2.0",
     "del": "^3.0.0",
     "eslint": "1.2.0",
     "eslint-config-airbnb-base": "11.1.3",
@@ -46,15 +57,15 @@
     "gulp-uglify": "^3.0.0",
     "gulp-usemin": "^0.3.29",
     "gulp-watch": "^5.0.0",
-    "husky": "0.14.3",
-    "jest": "20.0.4",
-    "lint-staged": "4.0.1",
+    "husky": "~0.14.3",
+    "jest": "^26.6.0",
+    "lint-staged": "^4.0.1",
     "postcss-hexrgba": "^1.0.0",
     "postcss-import": "^11.1.0",
     "postcss-mixins": "^6.2.0",
     "postcss-nested": "^3.0.0",
     "postcss-simple-vars": "^4.1.0",
-    "prettier": "1.5.2",
+    "prettier": "^1.5.2",
     "webpack": "^5.39.0",
     "webpack-cli": "^4.7.2"
   },
@@ -68,6 +79,9 @@
     "testEnvironment": "node",
     "coverageDirectory": "./coverage/",
     "collectCoverage": true
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "lint-staged": {
     "*.{js,css,html}": [
