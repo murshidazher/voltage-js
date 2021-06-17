@@ -1,3 +1,15 @@
+# v1.0.8 (Thu Jun 17 2021)
+
+#### ⚠️ Pushed to `main`
+
+- :books: docs: update examples ([@murshidazher](https://github.com/murshidazher))
+
+#### Authors: 1
+
+- Murshid Azher ([@murshidazher](https://github.com/murshidazher))
+
+---
+
 # v1.0.7 (Thu Jun 17 2021)
 
 #### ⚠️ Pushed to `main`
