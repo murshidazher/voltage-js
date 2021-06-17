@@ -53,7 +53,7 @@ Here's a brief intro about what a developer must do in order to start developing
 
 > An example implementation using react could be found [here](./example).
 
-- Add the latest npm package to out project.
+- Add the latest npm package to the project.
 - Import `voltage.css` and `voltage.js` to your frontend.
 
 ```shell
