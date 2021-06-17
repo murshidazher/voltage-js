@@ -1,23 +1,46 @@
-.notifier {
-  padding: 20px;
-  font-family: 'Inter', Georgia, serif;
-  box-sizing: border-box;
-  font-size: 18px;
-  color: #fff;
+:root {
+  --color-red-light: #ffdce0;
+  --color-red-dark: #b31d28;
+  --color-green-light: #dcffe4;
+  --color-green-dark: #176f2c;
 }
 
-.close {
+.voltage_notifier {
+  padding: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.voltage_online {
+  background-color: var(--color-green-light);
+  color: var(--color-green-dark);
+}
+
+.voltage_online .voltage_close {
+  margin-top: -2px;
   float: right;
   cursor: pointer;
+  -webkit-filter: invert(34%) sepia(26%) saturate(1391%) hue-rotate(82deg)
+    brightness(90%) contrast(89%);
+  filter: invert(34%) sepia(26%) saturate(1391%) hue-rotate(82deg)
+    brightness(90%) contrast(89%);
 }
 
-.online {
-  background-color: rgb(14, 163, 26);
-  height: auto;
+.voltage_offline {
+  background-color: var(--color-red-light);
+  color: var(--color-red-dark);
 }
 
-.offline {
-  background-color: #eb1621;
+.voltage_offline .voltage_close {
+  margin-top: -2px;
+  float: right;
+  cursor: pointer;
+  -webkit-filter: invert(13%) sepia(68%) saturate(5011%) hue-rotate(347deg)
+    brightness(93%) contrast(89%);
+  filter: invert(13%) sepia(68%) saturate(5011%) hue-rotate(347deg)
+    brightness(93%) contrast(89%);
 }
 
 /*# sourceMappingURL=maps/voltage.min.css.map */
