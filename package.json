@@ -80,9 +80,6 @@
     "coverageDirectory": "./coverage/",
     "collectCoverage": true
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "lint-staged": {
     "*.{js,css,html}": [
       "prettier --write --config .prettierrc",
