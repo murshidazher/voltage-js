@@ -5,8 +5,7 @@ name: Release
 
 # the event that will trigger the action
 on:
-  push:
-    branches: [main]
+  workflow_dispatch:
 
 # what the action will do
 jobs:
