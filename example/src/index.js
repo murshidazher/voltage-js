@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'voltage.js/dist/css/voltage.css';
-import 'voltage.js/dist/css/voltage.js';
+import 'voltage.js/dist/js/voltage.js';
 
 ReactDOM.render(
   <React.StrictMode>

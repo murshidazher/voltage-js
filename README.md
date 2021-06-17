@@ -1,7 +1,7 @@
 # [voltage.js](https://github.com/murshidazher/voltage.js) [![npm](https://img.shields.io/npm/v/voltage.js.svg?label=&color=0080FF)](https://github.com/murshidazher/voltage.js/releases/latest)
 
 [![travisci](https://img.shields.io/travis/com/murshidazher/voltage.js.svg?branch=main&style=flat-square)](https://travis-ci.com/)
-[![codecov](https://img.shields.io/codecov/c/gh/murshidazher/voltage.js/main?logo=codecov&style=flat-square&token=L8FWILY45J)](https://codecov.io/gh/murshidazher/voltage.js)
+[![codecov](https://img.shields.io/codecov/c/gh/murshidazher/voltage.js/main?logo=codecov&style=flat-square&token=XV6FDAFTM0)](https://codecov.io/gh/murshidazher/voltage.js)
 ![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)
 
 > A library for websites to detect user's connection status. Certified Lit 🔥🔥 **Accepting PRs**
