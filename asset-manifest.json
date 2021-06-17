@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.6d41dee8.chunk.css",
-    "main.js": "/static/js/main.5eaef435.chunk.js",
-    "main.js.map": "/static/js/main.5eaef435.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.8dce1b8e.js",
-    "runtime-main.js.map": "/static/js/runtime-main.8dce1b8e.js.map",
-    "static/css/2.7c28191c.chunk.css": "/static/css/2.7c28191c.chunk.css",
-    "static/js/2.c8326dfd.chunk.js": "/static/js/2.c8326dfd.chunk.js",
-    "static/js/2.c8326dfd.chunk.js.map": "/static/js/2.c8326dfd.chunk.js.map",
-    "static/js/3.9431d602.chunk.js": "/static/js/3.9431d602.chunk.js",
-    "static/js/3.9431d602.chunk.js.map": "/static/js/3.9431d602.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/2.7c28191c.chunk.css.map": "/static/css/2.7c28191c.chunk.css.map",
-    "static/css/main.6d41dee8.chunk.css.map": "/static/css/main.6d41dee8.chunk.css.map",
-    "static/js/2.c8326dfd.chunk.js.LICENSE.txt": "/static/js/2.c8326dfd.chunk.js.LICENSE.txt"
+    "main.css": "/voltage.js/static/css/main.6d41dee8.chunk.css",
+    "main.js": "/voltage.js/static/js/main.5cf0498f.chunk.js",
+    "main.js.map": "/voltage.js/static/js/main.5cf0498f.chunk.js.map",
+    "runtime-main.js": "/voltage.js/static/js/runtime-main.7602bc04.js",
+    "runtime-main.js.map": "/voltage.js/static/js/runtime-main.7602bc04.js.map",
+    "static/css/2.7c28191c.chunk.css": "/voltage.js/static/css/2.7c28191c.chunk.css",
+    "static/js/2.c8326dfd.chunk.js": "/voltage.js/static/js/2.c8326dfd.chunk.js",
+    "static/js/2.c8326dfd.chunk.js.map": "/voltage.js/static/js/2.c8326dfd.chunk.js.map",
+    "static/js/3.9431d602.chunk.js": "/voltage.js/static/js/3.9431d602.chunk.js",
+    "static/js/3.9431d602.chunk.js.map": "/voltage.js/static/js/3.9431d602.chunk.js.map",
+    "index.html": "/voltage.js/index.html",
+    "static/css/2.7c28191c.chunk.css.map": "/voltage.js/static/css/2.7c28191c.chunk.css.map",
+    "static/css/main.6d41dee8.chunk.css.map": "/voltage.js/static/css/main.6d41dee8.chunk.css.map",
+    "static/js/2.c8326dfd.chunk.js.LICENSE.txt": "/voltage.js/static/js/2.c8326dfd.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.8dce1b8e.js",
+    "static/js/runtime-main.7602bc04.js",
     "static/css/2.7c28191c.chunk.css",
     "static/js/2.c8326dfd.chunk.js",
     "static/css/main.6d41dee8.chunk.css",
-    "static/js/main.5eaef435.chunk.js"
+    "static/js/main.5cf0498f.chunk.js"
   ]
 }
